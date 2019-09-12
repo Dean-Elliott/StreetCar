@@ -4707,6 +4707,66 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffa4d200e6c7d9c4b90b3764b7ed86d4, type: 3}
+--- !u!1 &360277324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4025885461997292804, guid: 64dbfe54cefd54da7a81ef969d06a3d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 148522293}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &360277325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360277324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a27b962ddfa21461eb78fac1cb2f955f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Blackboard: {fileID: 360277326}
+  m_Parent: {fileID: 0}
+  m_StateName: StateMachine
+  m_Color: 0
+  m_HideScript: 1
+  m_Position: {x: 0, y: 0}
+  m_Transitions: []
+  m_CachedInstanceID: -161986
+  m_Description: 
+  m_EnabledState: {fileID: 0}
+  m_LastEnabledState: {fileID: 0}
+  m_StartState: {fileID: 0}
+  m_AnyState: {fileID: 0}
+  m_ConcurrentState: {fileID: 0}
+--- !u!114 &360277326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360277324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634db10235c0241d6ad43433a106016d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FloatVars: []
+  m_IntVars: []
+  m_BoolVars: []
+  m_StringVars: []
+  m_Vector3Vars: []
+  m_RectVars: []
+  m_ColorVars: []
+  m_QuaternionVars: []
+  m_GameObjectVars: []
+  m_TextureVars: []
+  m_MaterialVars: []
+  m_ObjectVars: []
+  m_DynamicLists: []
+  m_FsmEvents: []
+  m_ConcreteFsmEvents: []
+  m_Namespace: 
 --- !u!1001 &366369061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8375,6 +8435,60 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 203018319406341450}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &658542896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658542895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a27b962ddfa21461eb78fac1cb2f955f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Blackboard: {fileID: 658542897}
+  m_Parent: {fileID: 0}
+  m_StateName: StateMachine
+  m_Color: 0
+  m_HideScript: 1
+  m_Position: {x: 0, y: 0}
+  m_Transitions: []
+  m_CachedInstanceID: -161500
+  m_Description: 
+  m_EnabledState: {fileID: 0}
+  m_LastEnabledState: {fileID: 0}
+  m_StartState: {fileID: 0}
+  m_AnyState: {fileID: 0}
+  m_ConcurrentState: {fileID: 0}
+--- !u!114 &658542897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658542895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634db10235c0241d6ad43433a106016d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FloatVars: []
+  m_IntVars: []
+  m_BoolVars: []
+  m_StringVars: []
+  m_Vector3Vars: []
+  m_RectVars: []
+  m_ColorVars: []
+  m_QuaternionVars: []
+  m_GameObjectVars: []
+  m_TextureVars: []
+  m_MaterialVars: []
+  m_ObjectVars: []
+  m_DynamicLists: []
+  m_FsmEvents: []
+  m_ConcreteFsmEvents: []
+  m_Namespace: 
 --- !u!1 &661577515
 GameObject:
   m_ObjectHideFlags: 0
