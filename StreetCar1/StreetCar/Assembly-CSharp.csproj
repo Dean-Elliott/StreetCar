@@ -107,6 +107,9 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\Scripts\Behaviour\WeatherStateClear.cs" />
+    <Compile Include="Assets\Scripts\Behaviour\WeatherStateFog.cs" />
+    <Compile Include="Assets\Scripts\Behaviour\WeatherStateRain.cs" />
     <Compile Include="Assets\Scripts\CarNavigation.cs" />
     <Compile Include="Assets\Scripts\CharacterNavigationController.cs" />
     <Compile Include="Assets\Scripts\DayNightCycle.cs" />
