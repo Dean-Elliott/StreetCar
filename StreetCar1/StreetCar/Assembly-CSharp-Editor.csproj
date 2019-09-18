@@ -332,14 +332,14 @@
     <Reference Include="UnityEditor.iOS.Extensions">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
-      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
-    </Reference>
     <Reference Include="BehaviourMachineRuntime">
       <HintPath>C:/Users/elliodea/Documents/GitHub/StreetCar/StreetCar1/StreetCar/Assets/Plugins/BehaviourMachine/BehaviourMachineRuntime.dll</HintPath>
     </Reference>
     <Reference Include="BehaviourMachineEditor">
       <HintPath>C:/Users/elliodea/Documents/GitHub/StreetCar/StreetCar1/StreetCar/Assets/Plugins/Editor/BehaviourMachineEditor/BehaviourMachineEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Users/elliodea/Documents/GitHub/StreetCar/StreetCar1/StreetCar/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>

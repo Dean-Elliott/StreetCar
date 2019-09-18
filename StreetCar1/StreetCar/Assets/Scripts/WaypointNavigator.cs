@@ -25,7 +25,7 @@ public class WaypointNavigator : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void pathToNextWaypoint()
     {
         if (controller.reachedDestination)
         {

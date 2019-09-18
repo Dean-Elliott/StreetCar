@@ -4,8 +4,8 @@ using BehaviourMachine;
 
 public class GuardStateChasing : StateBehaviour {
 
-    public float speed;
     GameObjectVar threatVar;
+    public FloatVar speedVar;
 
     void Awake() {
         threatVar = blackboard.GetGameObjectVar("threat");
@@ -14,8 +14,8 @@ public class GuardStateChasing : StateBehaviour {
     // Called when the state is enabled
     void OnEnable() {
         Debug.Log("Starting Chasing");
-
-    }
+           speedVar = blackboard.GetFloatVar ("speed");
+}
 
     // Called when the state is disabled
     void OnDisable() {
@@ -26,9 +26,17 @@ public class GuardStateChasing : StateBehaviour {
         MoveTowardThreat();
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject == threatVar.Value)
+        {
+            OnVisionExit(other);
+        }
+    }
+
 
     void MoveTowardThreat() {
-        transform.position = Vector3.MoveTowards(transform.position, threatVar.Value.transform.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, threatVar.Value.transform.position, speedVar.Value * Time.deltaTime);
     }
 
 

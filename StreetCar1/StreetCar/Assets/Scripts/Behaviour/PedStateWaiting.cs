@@ -7,7 +7,7 @@ public class PedStateWaiting : StateBehaviour
 {
 	// Called when the state is enabled
 	void OnEnable () {
-		Debug.Log("Started *State*");
+		Debug.Log("epic");
 	}
  
 	// Called when the state is disabled

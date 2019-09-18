@@ -2014,7 +2014,7 @@ MonoBehaviour:
     m_EventID: 1099369208
   - m_Destination: {fileID: 164474044}
     m_EventID: 1030328587
-  m_CachedInstanceID: -16574
+  m_CachedInstanceID: 15586
 --- !u!114 &164474044
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2038,7 +2038,7 @@ MonoBehaviour:
     m_EventID: 441916086
   - m_Destination: {fileID: 164474045}
     m_EventID: 773966529
-  m_CachedInstanceID: -16552
+  m_CachedInstanceID: 15588
 --- !u!114 &164474045
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2060,7 +2060,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 164474044}
     m_EventID: 1030328587
-  m_CachedInstanceID: -16530
+  m_CachedInstanceID: 15590
 --- !u!114 &164474046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2080,7 +2080,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: -15020
+  m_CachedInstanceID: 15592
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -7799,7 +7799,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588750870}
   m_LocalRotation: {x: -0, y: 0, z: -1, w: 0}
-  m_LocalPosition: {x: 37.790005, y: 62.68, z: -239.3}
+  m_LocalPosition: {x: 37.790005, y: 62.68, z: -236.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 509645648}
@@ -7875,6 +7875,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1179749655}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &594037390
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594037387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 17.415619}
+  m_Center: {x: -0, y: 0, z: -2.6484108}
 --- !u!1001 &599175190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7940,7 +7953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &600904412
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7960,7 +7973,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 250, y: 70}
   m_Transitions: []
-  m_CachedInstanceID: -13318
+  m_CachedInstanceID: 15924
 --- !u!114 &600904413
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7984,7 +7997,7 @@ MonoBehaviour:
     m_EventID: 1433528493
   - m_Destination: {fileID: 600904414}
     m_EventID: 1744481128
-  m_CachedInstanceID: -13296
+  m_CachedInstanceID: 15926
 --- !u!114 &600904414
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8006,7 +8019,9 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 600904413}
     m_EventID: 223777050
-  m_CachedInstanceID: -13250
+  m_CachedInstanceID: 15928
+  reachedDestination: 0
+  currentWaypoint: {fileID: 0}
 --- !u!114 &600904415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8026,7 +8041,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: -12244
+  m_CachedInstanceID: 15930
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -12866,7 +12881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977918512}
   m_LocalRotation: {x: -0, y: 0, z: -1, w: 0}
-  m_LocalPosition: {x: 37.79, y: 62.68, z: -256.87}
+  m_LocalPosition: {x: 38.23, y: 62.68, z: -263.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 509645648}
@@ -24309,7 +24324,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427396325}
   m_LocalRotation: {x: -0, y: 0, z: -1, w: 0}
-  m_LocalPosition: {x: 38.380035, y: 62.68, z: -270.2}
+  m_LocalPosition: {x: 38.380035, y: 63.4, z: -270.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 509645648}
@@ -25175,7 +25190,7 @@ MonoBehaviour:
     m_EventID: 1833751859
   - m_Destination: {fileID: 1506482441}
     m_EventID: 341069707
-  m_CachedInstanceID: 15348
+  m_CachedInstanceID: 16668
 --- !u!114 &1506482441
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -25199,7 +25214,7 @@ MonoBehaviour:
     m_EventID: 1116410604
   - m_Destination: {fileID: 1506482442}
     m_EventID: 1833751859
-  m_CachedInstanceID: 15350
+  m_CachedInstanceID: 16670
 --- !u!114 &1506482442
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -25223,7 +25238,7 @@ MonoBehaviour:
     m_EventID: 1752902214
   - m_Destination: {fileID: 1506482441}
     m_EventID: 341069707
-  m_CachedInstanceID: 15352
+  m_CachedInstanceID: 16672
 --- !u!114 &1506482443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25243,7 +25258,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 15354
+  m_CachedInstanceID: 16674
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -32473,10 +32488,9 @@ MonoBehaviour:
     m_EventID: 918277450
   - m_Destination: {fileID: 2090453336}
     m_EventID: 269776017
-  m_CachedInstanceID: -31698
+  m_CachedInstanceID: 17082
   waypoints: []
   waypointIndex: 0
-  speed: 0
   depletionRate: 0
 --- !u!114 &2090453335
 MonoBehaviour:
@@ -32499,7 +32513,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 2090453334}
     m_EventID: 1718107665
-  m_CachedInstanceID: -31478
+  m_CachedInstanceID: 17084
   regenerationRate: 0
 --- !u!114 &2090453336
 MonoBehaviour:
@@ -32522,8 +32536,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 2090453334}
     m_EventID: 1256574435
-  m_CachedInstanceID: -31456
-  speed: 0
+  m_CachedInstanceID: 17086
 --- !u!114 &2090453337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32543,7 +32556,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: -27636
+  m_CachedInstanceID: 17088
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -32573,6 +32586,11 @@ MonoBehaviour:
     m_Blackboard: {fileID: 2090453338}
     m_IsConstant: 0
     value: 100
+  - m_ID: 1373630036
+    m_Name: speed
+    m_Blackboard: {fileID: 2090453338}
+    m_IsConstant: 0
+    value: 2
   m_IntVars: []
   m_BoolVars: []
   m_StringVars: []
@@ -32586,6 +32604,11 @@ MonoBehaviour:
     m_Blackboard: {fileID: 2090453338}
     m_IsConstant: 0
     value: {fileID: 0}
+  - m_ID: 962889943
+    m_Name: waypointParent
+    m_Blackboard: {fileID: 2090453338}
+    m_IsConstant: 0
+    value: {fileID: 1231791493}
   m_TextureVars: []
   m_MaterialVars: []
   m_ObjectVars: []
@@ -32593,7 +32616,7 @@ MonoBehaviour:
   m_FsmEvents: []
   m_ConcreteFsmEvents:
   - m_ID: 269776017
-    m_Name: seePlayer
+    m_Name: SeePlayer
     m_Blackboard: {fileID: 2090453338}
     m_IsConstant: 0
     m_IsSystem: 0
@@ -32645,7 +32668,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090453333}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -33569,6 +33592,16 @@ PrefabInstance:
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 1939434732}
+    - target: {fileID: 203018318890404986, guid: 0ca263fdedb48c849bd899e07c898170,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 203018318890404987, guid: 0ca263fdedb48c849bd899e07c898170,
+        type: 3}
+      propertyPath: currentWaypoint
+      value: 
+      objectReference: {fileID: 1939434732}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ca263fdedb48c849bd899e07c898170, type: 3}
 --- !u!1001 &4669508703761586596
@@ -33650,3 +33683,228 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a36db8e8357fe447a89132e0bd7b9f8, type: 3}
+--- !u!33 &7481630173172941864
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7481630173172941875}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &7481630173172941865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7481630173172941875}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -327.13, y: 70.857, z: -10.32}
+  m_LocalScale: {x: 0.37357706, y: 0.49013114, z: 0.32559708}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 462
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &7481630173172941870
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7481630173172941875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &7481630173172941871
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7481630173172941875}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &7481630173172941875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7481630173172941865}
+  - component: {fileID: 7481630173172941864}
+  - component: {fileID: 7481630173172941871}
+  - component: {fileID: 7481630173172941870}
+  - component: {fileID: 7481630173172941879}
+  - component: {fileID: 7481630173172941878}
+  - component: {fileID: 7481630173172941877}
+  - component: {fileID: 7481630173172941876}
+  m_Layer: 0
+  m_Name: buh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &7481630173172941876
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7481630173172941875}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77972d0d48c011f4a948722286dab764, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Blackboard: {fileID: 7481630173172941879}
+  m_Parent: {fileID: 7481630173172941878}
+  m_StateName: PedStateWalking
+  m_Color: 0
+  m_HideScript: 1
+  m_Position: {x: 340, y: 80}
+  m_Transitions:
+  - m_Destination: {fileID: 7481630173172941877}
+    m_EventID: 1484920362
+  m_CachedInstanceID: -157972
+  reachedDestination: 0
+  currentWaypoint: {fileID: 0}
+--- !u!114 &7481630173172941877
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7481630173172941875}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92082e18c75b09c4184e5092ee478d99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Blackboard: {fileID: 7481630173172941879}
+  m_Parent: {fileID: 7481630173172941878}
+  m_StateName: PedStateWaiting
+  m_Color: 0
+  m_HideScript: 1
+  m_Position: {x: 50, y: 70}
+  m_Transitions: []
+  m_CachedInstanceID: -157950
+--- !u!114 &7481630173172941878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7481630173172941875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a27b962ddfa21461eb78fac1cb2f955f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Blackboard: {fileID: 7481630173172941879}
+  m_Parent: {fileID: 0}
+  m_StateName: StateMachine
+  m_Color: 0
+  m_HideScript: 1
+  m_Position: {x: 0, y: 0}
+  m_Transitions: []
+  m_CachedInstanceID: -157682
+  m_Description: 
+  m_EnabledState: {fileID: 0}
+  m_LastEnabledState: {fileID: 0}
+  m_StartState: {fileID: 7481630173172941876}
+  m_AnyState: {fileID: 0}
+  m_ConcurrentState: {fileID: 0}
+--- !u!114 &7481630173172941879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7481630173172941875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634db10235c0241d6ad43433a106016d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FloatVars:
+  - m_ID: 1991147464
+    m_Name: movementSpeed
+    m_Blackboard: {fileID: 7481630173172941879}
+    m_IsConstant: 0
+    value: 1
+  - m_ID: 72627447
+    m_Name: stopDistance
+    m_Blackboard: {fileID: 7481630173172941879}
+    m_IsConstant: 0
+    value: 0.2
+  - m_ID: 292454285
+    m_Name: rotationSpeed
+    m_Blackboard: {fileID: 7481630173172941879}
+    m_IsConstant: 0
+    value: 120
+  m_IntVars: []
+  m_BoolVars: []
+  m_StringVars: []
+  m_Vector3Vars: []
+  m_RectVars: []
+  m_ColorVars: []
+  m_QuaternionVars: []
+  m_GameObjectVars:
+  - m_ID: 1387414103
+    m_Name: busStopDecisionWaypoint
+    m_Blackboard: {fileID: 7481630173172941879}
+    m_IsConstant: 0
+    value: {fileID: 977918512}
+  - m_ID: 1981076057
+    m_Name: waypointParent
+    m_Blackboard: {fileID: 7481630173172941879}
+    m_IsConstant: 0
+    value: {fileID: 509645647}
+  m_TextureVars: []
+  m_MaterialVars: []
+  m_ObjectVars: []
+  m_DynamicLists: []
+  m_FsmEvents: []
+  m_ConcreteFsmEvents:
+  - m_ID: 1484920362
+    m_Name: ApproachBusStop
+    m_Blackboard: {fileID: 7481630173172941879}
+    m_IsConstant: 0
+    m_IsSystem: 0
+  m_Namespace: 
