@@ -45,6 +45,7 @@ public class PedStateWalking : StateBehaviour
         {
             if((waypointParent.Value.transform.GetChild(i).position - transform.position).sqrMagnitude < tempSqrMagnitude)
             {
+                tempSqrMagnitude = (waypointParent.Value.transform.GetChild(i).position - transform.position).sqrMagnitude;
                 currentWaypoint = waypointParent.Value.transform.GetChild(i).GetComponent<Waypoint>();
             }
         }
@@ -55,10 +56,10 @@ public class PedStateWalking : StateBehaviour
 
    void shouldIWait()
     {
-        //if (Random.value > 0.5f)
-        //{         
+        if (Random.value > 0.9f)
+        {         
             SendEvent("ApproachBusStop");
-        //}
+        }
     }
 
     // Update is called once per frame

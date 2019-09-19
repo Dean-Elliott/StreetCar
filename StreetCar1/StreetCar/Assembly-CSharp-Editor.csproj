@@ -98,6 +98,7 @@
     <Compile Include="Assets\PostProcessing\Editor\Utils\EditorResources.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Utils\FxStyles.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
+    <Compile Include="Assets\RainMaker\Editor\RainMakerEditor.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>C:/Users/elliodea/Documents/GitHub/StreetCar/StreetCar1/StreetCar/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
