@@ -30,6 +30,10 @@ public class WeatherStateRain : StateBehaviour
 
             ParticleSystem.EmissionModule d = rainScript.CloudParticleSystem.emission;
             d.enabled = true;
+
+            ParticleSystem.EmissionModule e = rainScript.FogParticleSystem.emission;
+            e.enabled = false
+                ;
         }
 
         Debug.Log("Started *State*");
@@ -52,6 +56,9 @@ public class WeatherStateRain : StateBehaviour
 
             ParticleSystem.EmissionModule d = rainScript.CloudParticleSystem.emission;
             d.enabled = false;
+
+            ParticleSystem.EmissionModule e = rainScript.FogParticleSystem.emission;
+            e.enabled = false;
         }
 
         Debug.Log("Stopped *State*");

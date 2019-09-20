@@ -13,6 +13,7 @@ public class WeatherStateClear : StateBehaviour
         float randomTime = Random.Range(14f, 35f);
         await Task.Delay((int)(randomTime * 1000f));
 
+       // SendEvent("FogIncoming");
         SendEvent("Cloudy");
     }
  
