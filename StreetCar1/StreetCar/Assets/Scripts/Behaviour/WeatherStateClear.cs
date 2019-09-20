@@ -2,23 +2,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using BehaviourMachine;
+using System.Threading.Tasks;
 
 public class WeatherStateClear : StateBehaviour
 {
 	// Called when the state is enabled
-	void OnEnable () {
+	async void OnEnable () {
 		Debug.Log("Started *State*");
-        SendEvent(1833751859);
+
+        float randomTime = Random.Range(14f, 35f);
+        await Task.Delay((int)(randomTime * 1000f));
+
+        SendEvent("Cloudy");
     }
  
 	// Called when the state is disabled
 	void OnDisable () {
 		Debug.Log("Stopped *State*");
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }
 

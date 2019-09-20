@@ -46,6 +46,13 @@ namespace DigitalRuby.RainMaker
         [Tooltip("Particle system to use for rain mist")]
         public ParticleSystem RainMistParticleSystem;
 
+        [Tooltip("Particle system to use for rain mist")]
+        public ParticleSystem CloudParticleSystem;
+
+        [Tooltip("Particle system to use for rain mist")]
+        public ParticleSystem FogParticleSystem;
+
+
         [Tooltip("The threshold for intensity (0 - 1) at which mist starts to appear")]
         [Range(0.0f, 1.0f)]
         public float RainMistThreshold = 0.5f;
