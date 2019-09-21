@@ -2236,7 +2236,7 @@ MonoBehaviour:
     m_EventID: 1099369208
   - m_Destination: {fileID: 164474044}
     m_EventID: 1030328587
-  m_CachedInstanceID: 14516
+  m_CachedInstanceID: 18472
 --- !u!114 &164474044
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2260,7 +2260,7 @@ MonoBehaviour:
     m_EventID: 441916086
   - m_Destination: {fileID: 164474045}
     m_EventID: 773966529
-  m_CachedInstanceID: 14518
+  m_CachedInstanceID: 18474
 --- !u!114 &164474045
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2282,7 +2282,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 164474044}
     m_EventID: 1030328587
-  m_CachedInstanceID: 14520
+  m_CachedInstanceID: 18476
 --- !u!114 &164474046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2302,7 +2302,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 14522
+  m_CachedInstanceID: 18478
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -8765,7 +8765,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 250, y: 70}
   m_Transitions: []
-  m_CachedInstanceID: 14856
+  m_CachedInstanceID: 19002
   waypoints: []
   reachedDestination: 0
   currentWaypoint: {fileID: 0}
@@ -8792,7 +8792,7 @@ MonoBehaviour:
     m_EventID: 1433528493
   - m_Destination: {fileID: 600904414}
     m_EventID: 1744481128
-  m_CachedInstanceID: 14858
+  m_CachedInstanceID: 19004
 --- !u!114 &600904414
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8814,7 +8814,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 600904413}
     m_EventID: 223777050
-  m_CachedInstanceID: 14860
+  m_CachedInstanceID: 19006
   reachedDestination: 0
   currentWaypoint: {fileID: 0}
 --- !u!114 &600904415
@@ -8836,7 +8836,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 14862
+  m_CachedInstanceID: 19008
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -10979,11 +10979,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90.00001
       objectReference: {fileID: 0}
-    - target: {fileID: 23776185747029052, guid: 2224b63330275e5478ef024b2913f937,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ffc56b8fbebf9834fa93c32d2ce36333, type: 2}
     - target: {fileID: 4040797355963638, guid: 2224b63330275e5478ef024b2913f937, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.57
@@ -10992,6 +10987,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 23776185747029052, guid: 2224b63330275e5478ef024b2913f937,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ffc56b8fbebf9834fa93c32d2ce36333, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2224b63330275e5478ef024b2913f937, type: 3}
 --- !u!4 &748514812 stripped
@@ -20353,11 +20353,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90.00001
       objectReference: {fileID: 0}
-    - target: {fileID: 23776185747029052, guid: 2224b63330275e5478ef024b2913f937,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ffc56b8fbebf9834fa93c32d2ce36333, type: 2}
     - target: {fileID: 4040797355963638, guid: 2224b63330275e5478ef024b2913f937, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.83
@@ -20366,6 +20361,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 23776185747029052, guid: 2224b63330275e5478ef024b2913f937,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ffc56b8fbebf9834fa93c32d2ce36333, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2224b63330275e5478ef024b2913f937, type: 3}
 --- !u!1001 &1041045314
@@ -28232,11 +28232,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90.00001
       objectReference: {fileID: 0}
-    - target: {fileID: 23776185747029052, guid: 2224b63330275e5478ef024b2913f937,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ffc56b8fbebf9834fa93c32d2ce36333, type: 2}
     - target: {fileID: 4040797355963638, guid: 2224b63330275e5478ef024b2913f937, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.46
@@ -28245,6 +28240,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 23776185747029052, guid: 2224b63330275e5478ef024b2913f937,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ffc56b8fbebf9834fa93c32d2ce36333, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2224b63330275e5478ef024b2913f937, type: 3}
 --- !u!1 &1218423337
@@ -32391,7 +32391,7 @@ MonoBehaviour:
     m_EventID: 1833751859
   - m_Destination: {fileID: 1506482441}
     m_EventID: 341069707
-  m_CachedInstanceID: 15618
+  m_CachedInstanceID: 20134
 --- !u!114 &1506482441
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -32415,7 +32415,7 @@ MonoBehaviour:
     m_EventID: 1116410604
   - m_Destination: {fileID: 1506482442}
     m_EventID: 1833751859
-  m_CachedInstanceID: 15620
+  m_CachedInstanceID: 20136
   rainPrefab: {fileID: 0}
   duration: 8
 --- !u!114 &1506482442
@@ -32441,7 +32441,7 @@ MonoBehaviour:
     m_EventID: 1752902214
   - m_Destination: {fileID: 1506482441}
     m_EventID: 341069707
-  m_CachedInstanceID: 15622
+  m_CachedInstanceID: 20138
   rainPrefab: {fileID: 0}
   duration: 15
 --- !u!114 &1506482443
@@ -32463,7 +32463,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 15624
+  m_CachedInstanceID: 20140
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -45227,7 +45227,7 @@ MonoBehaviour:
     m_EventID: 918277450
   - m_Destination: {fileID: 2090453336}
     m_EventID: 269776017
-  m_CachedInstanceID: 16054
+  m_CachedInstanceID: 20778
   waypoints: []
   waypointIndex: 0
   depletionRate: 0
@@ -45252,7 +45252,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 2090453334}
     m_EventID: 1718107665
-  m_CachedInstanceID: 16056
+  m_CachedInstanceID: 20780
   regenerationRate: 0
 --- !u!114 &2090453336
 MonoBehaviour:
@@ -45275,7 +45275,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 2090453334}
     m_EventID: 1256574435
-  m_CachedInstanceID: 16058
+  m_CachedInstanceID: 20782
 --- !u!114 &2090453337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45295,7 +45295,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 16060
+  m_CachedInstanceID: 20784
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -46610,7 +46610,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 7481630173172941877}
     m_EventID: 1484920362
-  m_CachedInstanceID: 16138
+  m_CachedInstanceID: 20884
   reachedDestination: 0
   currentWaypoint: {fileID: 0}
 --- !u!114 &7481630173172941877
@@ -46631,8 +46631,10 @@ MonoBehaviour:
   m_Color: 0
   m_HideScript: 1
   m_Position: {x: 50, y: 70}
-  m_Transitions: []
-  m_CachedInstanceID: 16140
+  m_Transitions:
+  - m_Destination: {fileID: 7481630173172941880}
+    m_EventID: 1620087943
+  m_CachedInstanceID: 20886
 --- !u!114 &7481630173172941878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46652,7 +46654,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 16142
+  m_CachedInstanceID: 20888
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -46705,6 +46707,11 @@ MonoBehaviour:
     m_Blackboard: {fileID: 7481630173172941879}
     m_IsConstant: 0
     value: {fileID: 509645647}
+  - m_ID: 337972559
+    m_Name: Threat
+    m_Blackboard: {fileID: 7481630173172941879}
+    m_IsConstant: 0
+    value: {fileID: 0}
   m_TextureVars: []
   m_MaterialVars: []
   m_ObjectVars: []
@@ -46713,6 +46720,11 @@ MonoBehaviour:
   m_ConcreteFsmEvents:
   - m_ID: 1484920362
     m_Name: ApproachBusStop
+    m_Blackboard: {fileID: 7481630173172941879}
+    m_IsConstant: 0
+    m_IsSystem: 0
+  - m_ID: 1620087943
+    m_Name: SeePlayer
     m_Blackboard: {fileID: 7481630173172941879}
     m_IsConstant: 0
     m_IsSystem: 0
@@ -46734,9 +46746,9 @@ MonoBehaviour:
   m_StateName: PedStateBoarding
   m_Color: 0
   m_HideScript: 1
-  m_Position: {x: 100, y: 180}
+  m_Position: {x: 120, y: 170}
   m_Transitions: []
-  m_CachedInstanceID: 16146
+  m_CachedInstanceID: 20892
   waypoints: []
   reachedDestination: 0
   currentWaypoint: {fileID: 0}

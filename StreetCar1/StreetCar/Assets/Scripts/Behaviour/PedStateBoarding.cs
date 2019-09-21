@@ -36,6 +36,7 @@ public class PedStateBoarding : StateBehaviour
     // Called when the state is enabled
     void OnEnable()
     {
+       
         Debug.Log("Start boarding");
         speedVar = blackboard.GetFloatVar("speed");
     }
@@ -60,7 +61,7 @@ public class PedStateBoarding : StateBehaviour
 
         direction = Mathf.RoundToInt(Random.Range(0f, 1f));
 
-        float tempSqrMagnitude = 999999999999999;
+        float tempSqrMagnitude = float.MaxValue;
         for (int i = 0; i < waypointParent.Value.transform.childCount; i++)
         {
             if ((waypointParent.Value.transform.GetChild(i).position - transform.position).sqrMagnitude < tempSqrMagnitude)
@@ -83,7 +84,8 @@ public class PedStateBoarding : StateBehaviour
 
     void MoveTowardThreat()
     {
-        transform.position = Vector3.MoveTowards(transform.position, threatVar.Value.transform.position, speedVar.Value * Time.deltaTime);
+        PlayerController PlayerController = FindObjectOfType<PlayerController>();
+        transform.position = Vector3.MoveTowards(transform.position, PlayerController.transform.position, speedVar.Value * Time.deltaTime);
     }
 
 
