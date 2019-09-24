@@ -12,16 +12,19 @@ public class WaypointNavigator : MonoBehaviour
     private void Awake()
     {
         controller = GetComponent<CharacterNavigationController>();
-        
 
-        
+
+
     }
     // Start is called before the first frame update
     void Start()
     {
         direction = Mathf.RoundToInt(Random.Range(0f, 1f));
 
-        controller.SetDestination(currentWaypoint.GetPosition());
+        if (currentWaypoint && controller)
+        {
+            controller.SetDestination(currentWaypoint.GetPosition());
+        }
     }
 
     // Update is called once per frame

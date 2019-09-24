@@ -14,8 +14,6 @@ public class PedStateWalking : StateBehaviour
     public FloatVar rotationSpeed;
     public FloatVar stopDistance;
 
-    public GameObjectVar waypointParent;
-
     public Waypoint currentWaypoint;
     int direction;
 
@@ -24,13 +22,15 @@ public class PedStateWalking : StateBehaviour
     Vector3 lastPositon;
     Vector3 velocity;
     Vector3 destination;
+    private float timeToCheck;
+
     // Start is called before the first frame update
 
     private void OnEnable()
     {
         blackboard = GetComponent<Blackboard>();
 
-        waypointParent = blackboard.GetGameObjectVar("waypointParent");
+        GameObject waypointParent = FindObjectOfType<PedestrianSpawner>().gameObject;
 
         waitTransitionWaypoint = blackboard.GetGameObjectVar("busStopDecisionWaypoint");
 
@@ -41,23 +41,23 @@ public class PedStateWalking : StateBehaviour
         direction = Mathf.RoundToInt(Random.Range(0f, 1f));
 
         float tempSqrMagnitude = 999999999999999;
-        for(int i = 0; i < waypointParent.Value.transform.childCount; i++)
+        for (int i = 0; i < waypointParent.transform.childCount; i++)
         {
-            if((waypointParent.Value.transform.GetChild(i).position - transform.position).sqrMagnitude < tempSqrMagnitude)
+            if ((waypointParent.transform.GetChild(i).position - transform.position).sqrMagnitude < tempSqrMagnitude)
             {
-                tempSqrMagnitude = (waypointParent.Value.transform.GetChild(i).position - transform.position).sqrMagnitude;
-                currentWaypoint = waypointParent.Value.transform.GetChild(i).GetComponent<Waypoint>();
+                tempSqrMagnitude = (waypointParent.transform.GetChild(i).position - transform.position).sqrMagnitude;
+                currentWaypoint = waypointParent.transform.GetChild(i).GetComponent<Waypoint>();
             }
         }
 
-
+        timeToCheck = -20f;
         SetDestination(currentWaypoint.GetPosition());
     }
 
-   void shouldIWait()
+    void shouldIWait()
     {
-        if (Random.value > 0.9f)
-        {         
+        if (Random.value < 0.1f)
+        {
             SendEvent("ApproachBusStop");
         }
     }
@@ -65,6 +65,13 @@ public class PedStateWalking : StateBehaviour
     // Update is called once per frame
     void Update()
     {
+        timeToCheck += Time.deltaTime;
+        if (timeToCheck > 1f)
+        {
+            timeToCheck = 0f;
+            shouldIWait();
+        }
+
         if (transform.position != destination)
         {
             Vector3 destinationDirection = destination - transform.position;
@@ -108,13 +115,7 @@ public class PedStateWalking : StateBehaviour
     {
         if (reachedDestination)
         {
-
-            if (currentWaypoint.gameObject == waitTransitionWaypoint.Value)
-            {
-                print("buh");
-                shouldIWait();
-            }
-            else if (direction == 0)
+            if (direction == 0)
             {
                 currentWaypoint = currentWaypoint.nextWaypoint;
             }

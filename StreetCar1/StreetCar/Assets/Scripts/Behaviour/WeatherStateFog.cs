@@ -13,7 +13,7 @@ public class WeatherStateFog : StateBehaviour
     // Called when the state is enabled
     private float time;
 
-    async void OnEnable()
+    void OnEnable()
     {
 
         RainScript rainScript = FindObjectOfType<RainScript>();

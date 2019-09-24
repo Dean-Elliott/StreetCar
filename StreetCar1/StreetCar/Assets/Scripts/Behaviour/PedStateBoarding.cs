@@ -27,18 +27,16 @@ public class PedStateBoarding : StateBehaviour
     Vector3 lastPositon;
     Vector3 velocity;
     Vector3 destination;
-
-    void Awake()
-    {
-        threatVar = blackboard.GetGameObjectVar("threat");
-    }
+    private Transform door;
 
     // Called when the state is enabled
     void OnEnable()
     {
-       
+        door = FindObjectOfType<PlayerController>().transform.Find("Door");
         Debug.Log("Start boarding");
-        speedVar = blackboard.GetFloatVar("speed");
+        speedVar = GetComponent<Blackboard>().GetFloatVar("movementSpeed");
+
+
     }
 
     // Called when the state is disabled
@@ -49,52 +47,11 @@ public class PedStateBoarding : StateBehaviour
 
     void Update()
     {
-        blackboard = GetComponent<Blackboard>();
-
-        waypointParent = blackboard.GetGameObjectVar("waypointParent");
-
-        waitTransitionWaypoint = blackboard.GetGameObjectVar("busStopDecisionWaypoint");
-
-        movementSpeed = blackboard.GetFloatVar("movementSpeed");
-        stopDistance = blackboard.GetFloatVar("stopDistance");
-        rotationSpeed = blackboard.GetFloatVar("rotationSpeed");
-
-        direction = Mathf.RoundToInt(Random.Range(0f, 1f));
-
-        float tempSqrMagnitude = float.MaxValue;
-        for (int i = 0; i < waypointParent.Value.transform.childCount; i++)
+        transform.position = Vector3.MoveTowards(transform.position, door.position, Time.deltaTime * speedVar.Value);
+        if ((door.position - transform.position).sqrMagnitude < 0.5f)
         {
-            if ((waypointParent.Value.transform.GetChild(i).position - transform.position).sqrMagnitude < tempSqrMagnitude)
-            {
-                tempSqrMagnitude = (waypointParent.Value.transform.GetChild(i).position - transform.position).sqrMagnitude;
-                currentWaypoint = waypointParent.Value.transform.GetChild(i).GetComponent<Waypoint>();
-            }
+            Destroy(gameObject);
         }
-
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject == threatVar.Value)
-        {
-            OnVisionExit(other);
-        }
-    }
-
-
-    void MoveTowardThreat()
-    {
-        PlayerController PlayerController = FindObjectOfType<PlayerController>();
-        transform.position = Vector3.MoveTowards(transform.position, PlayerController.transform.position, speedVar.Value * Time.deltaTime);
-    }
-
-
-
-    void OnVisionExit(Collider other)
-    {
-        Debug.Log("Lost Player!!!!");
-        SendEvent("LostSightOfPlayer");
-        threatVar.Value = null;
     }
 }
 

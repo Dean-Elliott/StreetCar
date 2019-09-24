@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 203018318890404987}
   - component: {fileID: 203018318890404986}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: RegularPedestrian
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,8 +109,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reachedDestination: 0
   movementSpeed: 1
-  rotationSpeed: 120
+  rotationSpeed: 220
   stopDistance: 0.2
+  currentWaypoint: {fileID: 0}
 --- !u!114 &203018318890404986
 MonoBehaviour:
   m_ObjectHideFlags: 0

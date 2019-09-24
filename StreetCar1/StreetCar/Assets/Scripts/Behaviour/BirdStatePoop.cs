@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using BehaviourMachine;
 
-public class BirdStateFlying : StateBehaviour
+public class BirdStatePoop : StateBehaviour
 {
 	// Called when the state is enabled
 	void OnEnable () {
