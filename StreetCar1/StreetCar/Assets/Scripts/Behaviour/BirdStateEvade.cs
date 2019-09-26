@@ -22,12 +22,12 @@ public class BirdStateEvade : StateBehaviour
 
     // Called when the state is enabled
     void OnEnable () {
-		Debug.Log("Started *State*");
+		Debug.Log("Started "+GetType().Name);
 	}
  
 	// Called when the state is disabled
 	void OnDisable () {
-		Debug.Log("Stopped *State*");
+		Debug.Log("Stopped " + GetType().Name);
 	}
 
     // Update is called once per frame
@@ -49,14 +49,11 @@ public class BirdStateEvade : StateBehaviour
             SendEvent("EnergyLow");
         }
     }
+
     void MoveTowardWaypoint()
     {
         transform.position = Vector3.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, speed * Time.deltaTime);
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject == waypoints[waypointIndex])
+        if ((transform.position - waypoints[waypointIndex].transform.position).sqrMagnitude <= 0.01f)
         {
             waypointIndex = (waypointIndex + 1) % waypoints.Count;
         }
